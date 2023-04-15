@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import Logo from '../../public/mark.svg'
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,9 +17,9 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">MakeAWeb</span>
-            <img
+            <Image
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src={Logo}
               alt=""
             />
           </Link>
@@ -58,10 +60,10 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">MakeAWeb</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              <Image
+                src={Logo}
                 alt=""
+                style={'h-8 w-auto'}
               />
             </Link>
             <button

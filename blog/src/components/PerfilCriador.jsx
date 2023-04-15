@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PerfilCriador( props ){
     return(
-        <article key={props.post.id} className="flex max-w-xl flex-col items-start justify-between bg-backSecond rounded-xl p-11">
+        <article className="flex max-w-xl flex-col items-start justify-between bg-backSecond rounded-xl p-11">
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime={props.post.datetime}>
                     {props.post.date}
@@ -25,7 +25,7 @@ export default function PerfilCriador( props ){
                   <p className="mt-5 line-clamp-3 text-sm leading-6 ">{props.post.description}</p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
-                  <Image src={props.post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
+                  <Image src={props.post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" width={40} height={40}/>
                   <div className="text-sm leading-6">
                     <p className="font-semibold text-white">
                       <Link href={props.post.author.href}>

@@ -63,7 +63,6 @@ export default function Example() {
               <Image
                 src={Logo}
                 alt=""
-                style={'h-8 w-auto'}
               />
             </Link>
             <button

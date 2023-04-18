@@ -1,5 +1,7 @@
 import Image from "next/image"
 import heroimg from "../../public/heroimg.webp"
+import 'atropos/css'
+import Atropos from 'atropos/react';
 
 export default function Hero(){
     return(
@@ -11,11 +13,13 @@ export default function Hero(){
                 </div>
                 <button className="px-5 py-3 bg-cta rounded-xl w-1/2 drop-shadow-xl">Criar</button>
             </div>
-            <Image
-                alt="Mountains"
-                src={heroimg}
-                className="rounded-xl max-w-sm lg:max-w-2xl drop-shadow-xl"
-            />
+            <Atropos >
+                <Image
+                    alt="Mountains"
+                    src={heroimg}
+                    className="rounded-xl max-w-sm lg:max-w-2xl drop-shadow-xl"
+                />
+            </Atropos>
         </div>
     )
 }

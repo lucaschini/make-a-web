@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from '../../public/mark.svg'
 
+
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -39,7 +40,7 @@ export default function Example() {
           <Link href="/posts" className="text-sm font-semibold leading-6">
             Posts
           </Link>
-          <Link href="#" className="text-sm font-semibold leading-6">
+          <Link href="/criadores" className="text-sm font-semibold leading-6">
             Criadores
           </Link>
           <Link href="#" className="text-sm font-semibold leading-6">
@@ -78,13 +79,13 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  href="#"
+                  href="/posts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-cta"
                 >
                   Posts
                 </Link>
                 <Link
-                  href="#"
+                  href="/criadores"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-cta"
                 >
                   Criadores

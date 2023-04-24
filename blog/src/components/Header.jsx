@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from '../../public/mark.svg'
+import { AiOutlineUser } from "react-icons/ai";
 
 
 export default function Example() {
@@ -44,8 +45,8 @@ export default function Example() {
             Criadores
           </Link>
           <Link href="#" className="text-sm font-semibold leading-6">
-            <button className="px-3 py-2 bg-cta rounded-xl drop-shadow-xl">
-              Log in <span aria-hidden="true">&rarr;</span>
+            <button className="px-5 py-3 bg-cta rounded-xl drop-shadow-xl flex items-center justify-center gap-2">
+             <AiOutlineUser /> Log in  <span aria-hidden="true">&rarr;</span>
             </button>
           </Link>
         </div>

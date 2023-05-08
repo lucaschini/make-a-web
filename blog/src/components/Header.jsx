@@ -44,9 +44,9 @@ export default function Example() {
           <Link href="/criadores" className="text-sm font-semibold leading-6">
             Criadores
           </Link>
-          <Link href="#" className="text-sm font-semibold leading-6">
+          <Link href="/login" className="text-sm font-semibold leading-6">
             <button className="px-5 py-3 bg-cta rounded-xl drop-shadow-xl flex items-center justify-center gap-2">
-             <AiOutlineUser /> Log in  <span aria-hidden="true">&rarr;</span>
+             <AiOutlineUser /> Entrar  <span aria-hidden="true">&rarr;</span>
             </button>
           </Link>
         </div>
@@ -94,10 +94,10 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <Link
-                  href="#"
+                  href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-cta"
                 >
-                  Log in
+                  Entrar
                 </Link>
               </div>
             </div>

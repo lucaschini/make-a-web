@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-10 font-mono'>
+    <div className='flex flex-col gap-10 font-mono text-white'>
       < HeaderNew/>
       < Hero/>
       < CardSection type='creator' title='Criadores' sub='Conheça criadores famosos que utilizam nosso serviço'/>

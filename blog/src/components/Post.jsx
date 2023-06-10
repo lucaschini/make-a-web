@@ -5,7 +5,7 @@ import coding from "../../public/coding.jpg"
 export default function Post(props){
     return(
         <Link href={props.post.author.href}>
-        <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-back rounded-xl">
+        <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl">
           <Image
             src={coding}
             alt=""

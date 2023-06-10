@@ -5,7 +5,7 @@ import astronauta from "../../public/astronauta.jpg"
 export default function PostTemp(){
     return(
         <Link href="../pages/index">
-        <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-back rounded-xl">
+        <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl">
           <Image
             src={astronauta}
             alt=""
@@ -17,7 +17,6 @@ export default function PostTemp(){
             <p className="font-semibold text-xl text-white">
               Como fazer um código mais limpo!
             </p>
-            <p className="">30403 likes ❤</p>
           </div>
         </article>
       </Link>

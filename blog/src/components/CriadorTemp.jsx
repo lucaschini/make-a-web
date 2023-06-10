@@ -4,8 +4,8 @@ import dino from "../../public/dino.jpg"
 
 export default function CriadorTemp(){
     return(
-      <Link href="../pages/index">
-      <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-back rounded-xl p-11">
+      <Link href="/creatorPage">
+      <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl p-11">
         <Image
           src={dino}
           alt=""

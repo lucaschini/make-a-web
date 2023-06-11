@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import headerImg from "../../public/background.png";
+import headerImg from "../../public/background.png"; 
 import iconImg from "../../public/npp.jpg";
 
 import Socials from "./Socials";
@@ -17,7 +17,7 @@ export default function CreatorContent() {
           alt="Imagem de perfil"
           className="w-40 h-40 relative bottom-28 left-28 rounded-xl shadow-lg"
         />
-        <div className="ml-28 pb-16 flex flex-col gap-4">
+        <div className="lg:px-0 lg:text-left lg:items-start lg:ml-28 pb-16 flex flex-col items-center px-5 text-center gap-4">
           <p className="font-bold text-5xl">Nicolas Pereira Paz</p>
           <p className="text-3xl text-caption">Bio:</p>
           <p>

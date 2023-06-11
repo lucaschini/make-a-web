@@ -4,17 +4,15 @@ import astronauta from "../../public/astronauta.jpg"
 
 export default function PostTemp(){
     return(
-        <Link href="../pages/index">
-        <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl">
+        <Link href="/openPost">
+        <article className="flex lg:w-[400px] w-[300px] flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl">
           <Image
             src={astronauta}
-            alt=""
-            className=" mb-8 rounded-t-xl bg-gray-50"
-            width={400}
-            height={400}
+            alt="Image post"
+            className="lg:h-[400px] lg:w-[400px] h-[300px] w-[300px] mb-8 rounded-t-xl bg-gray-50"
           />
           <div className="text-sm leading-6 text-center">
-            <p className="font-semibold text-xl text-white">
+            <p className="font-medium text-sm lg:text-xl text-white">
               Como fazer um código mais limpo!
             </p>
           </div>

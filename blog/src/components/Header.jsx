@@ -99,6 +99,12 @@ export default function Example() {
                 >
                   Entrar
                 </Link>
+                <Link
+                  href="/criarConta"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-cta"
+                >
+                  Criar Conta
+                </Link>
               </div>
             </div>
           </div>

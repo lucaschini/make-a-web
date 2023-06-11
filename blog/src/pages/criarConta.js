@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function CriarConta() {
   return (
     <div className="h-screen flex flex-col items-center bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]">
-      <div className="mt-28 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
           Criar Conta
         </h2>

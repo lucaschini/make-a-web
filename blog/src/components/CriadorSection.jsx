@@ -1,11 +1,20 @@
-import CriadorTemp from "./CardCreator";
 import { AiOutlineSearch } from "react-icons/ai";
-import PerfilCriador from "./PerfilCriador";
+
 import CardCreator from "./CardCreator";
+import { useState } from "react";
 
 export default function CriadorSection(props) {
+  const [busca, setBusca] = useState("");
+
+  const arr = props.arr;
+  const buscaLower = busca.toLowerCase();
+
+  const criadorFiltrado = arr.filter((criador) =>
+    criador.author.name.toLowerCase().includes(buscaLower)
+  );
+
   return (
-    <div className="flex flex-col gap-5 items-center pb-9">
+    <div className="flex flex-col gap-5 items-center pb-9 lg:min-h-[80vh]">
       <h1 className="text-4xl text-center lg:text-6xl font-bold my-5">
         Navegar por criadores
       </h1>
@@ -21,10 +30,12 @@ export default function CriadorSection(props) {
           placeholder="Procure mais criadores"
           type="text"
           name="search"
+          value={busca}
+          onChange={(ev) => setBusca(ev.target.value)}
         />
       </label>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        {props.arr.map((creator) => (
+        {criadorFiltrado.map((creator) => (
           <CardCreator key={creator.id} arr={creator} />
         ))}
       </div>

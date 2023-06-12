@@ -2,7 +2,7 @@ import Header from "@/components/Header"
 import PostContent from "@/components/PostContent"
 import Footer from "@/components/Footer"
 
-export default function OpenPost(second) {
+export default function OpenPost() {
     return(
         <>
         < Header/>

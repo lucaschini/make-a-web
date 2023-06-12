@@ -21,19 +21,14 @@ export default function CreatorContent() {
           <p className="font-bold text-5xl">Nicolas Pereira Paz</p>
           <p className="text-3xl text-caption">Bio:</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-            culpa modi ipsa sunt facere magni porro odio nisi pariatur quos
-            reiciendis, quo eos praesentium voluptate voluptatibus id animi
-            mollitia! Exercitationem.
+          Gosto de falar sobre tecnologia e IA 👋
           </p>
           <p className="text-xl text-caption">Links:</p>
           <Socials />
         </div>
         <div className="flex justify-center">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <PostTemp />
-            <PostTemp />
-            <PostTemp />
+            
           </div>
         </div>
       </div>

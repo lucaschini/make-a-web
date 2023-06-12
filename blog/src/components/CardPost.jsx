@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Post(props){
+export default function CardPost(props){
     return(
         <Link href={props.arr.category.href}>
         <article className="flex max-w-sm flex-col items-center justify-center bg-gradient-to-b from-cta to-transparent rounded-xl">

@@ -1,5 +1,5 @@
 import PerfilCriador from "@/components/PerfilCriador"
-import Post from "./Post"
+import Post from "./CardPost"
 import CardCreator from "./CardCreator";
 
 

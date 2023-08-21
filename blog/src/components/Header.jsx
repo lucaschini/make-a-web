@@ -6,6 +6,8 @@ import Image from "next/image";
 import Logo from '../../public/mark.svg'
 import { AiOutlineUser } from "react-icons/ai";
 
+import Dropdown from "@/components/Dropdown";
+
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,13 +40,14 @@ export default function Example() {
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-12 lg:items-center ">
+          <Dropdown/>
           <Link href="/posts" className="text-sm font-semibold leading-6">
             Posts
           </Link>
           <Link href="/criadores" className="text-sm font-semibold leading-6">
             Criadores
           </Link>
-          <Link href="/login" className="text-sm font-semibold leading-6">
+          <Link href="/user" className="text-sm font-semibold leading-6">
             <button className="px-5 py-3 bg-cta rounded-xl drop-shadow-xl flex items-center justify-center gap-2">
              <AiOutlineUser /> Entrar  <span aria-hidden="true">&rarr;</span>
             </button>

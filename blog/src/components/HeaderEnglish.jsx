@@ -45,17 +45,11 @@ export default function Example() {
             Posts
           </Link>
           <Link href="/criadores" className="text-sm font-semibold leading-6">
-            Criadores
-          </Link>
-          <Link href="/dev" className="text-sm font-semibold leading-6">
-            Info
-          </Link>
-          <Link href="/curriculo" className="text-sm font-semibold leading-6">
-            Portifolios
+            Creators
           </Link>
           <Link href="/user" className="text-sm font-semibold leading-6">
             <button className="px-5 py-3 bg-cta rounded-xl drop-shadow-xl flex items-center justify-center gap-2">
-             <AiOutlineUser /> Entrar  <span aria-hidden="true">&rarr;</span>
+             <AiOutlineUser /> Sign In  <span aria-hidden="true">&rarr;</span>
             </button>
           </Link>
         </div>
@@ -98,7 +92,7 @@ export default function Example() {
                   href="/criadores"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-cta"
                 >
-                  Criadores
+                  Creators
                 </Link>
               </div>
               <div className="py-6">
@@ -106,13 +100,13 @@ export default function Example() {
                   href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-cta"
                 >
-                  Entrar
+                  Sign In
                 </Link>
                 <Link
                   href="/criarConta"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-cta"
                 >
-                  Criar Conta
+                  Create an account
                 </Link>
               </div>
             </div>

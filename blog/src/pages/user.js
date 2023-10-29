@@ -12,7 +12,7 @@ export default function User() {
               Altere suas informações pessoais.
             </p>
 
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div className=" w- mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
               <div className="sm:col-span-4">
                 <label
                   htmlFor="username"
@@ -180,12 +180,14 @@ export default function User() {
               Voltar
             </button>
           </Link>
+          <Link href="/posts">
           <button
             type="submit"
             className="rounded-md bg-cta px-3 py-2 text-sm font-semibold text-white"
           >
             Salvar
           </button>
+          </Link>
         </div>
       </form>
     </div>
